@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/american"
+        android:layout_gravity="left|top"
+        android:id="@+id/americanpsycho" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hannibal"
+        android:id="@+id/hannibal"
+        android:layout_gravity="right|top"
+        android:layout_below="@+id/americanpsycho"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kevin"
+        android:src="@drawable/kevin"
+        android:layout_gravity="right|center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reddragon"
+        android:id="@+id/redragon"
+        android:layout_below="@+id/americanpsycho"
+        android:layout_toRightOf="@+id/americanpsycho"
+        android:layout_toEndOf="@+id/americanpsycho" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/silencio"
+        android:id="@+id/silencio"
+        android:layout_below="@+id/hannibal"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/leon"
+        android:id="@+id/leon"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/silencio"
+        android:layout_toEndOf="@+id/silencio" />
+
+</RelativeLayout>
+    </ScrollView>
