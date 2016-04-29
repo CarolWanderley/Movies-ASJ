@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                if (v.getId() == R.id.filme1) {
+                if (v.getId() == R.id.filme2) {
                     Bundle bundle = new Bundle();
                     bundle.putString("Titulo", filmes.get(1).getTitulo());
                     bundle.putString("Ano", filmes.get(1).getAno());
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent.putExtras(bundle));
 
                 }
-                if (v.getId() == R.id.filme2) {
+                if (v.getId() == R.id.filme3) {
                     Bundle bundle = new Bundle();
                     bundle.putString("Titulo", filmes.get(2).getTitulo());
                     bundle.putString("Ano", filmes.get(2).getAno());
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent.putExtras(bundle));
 
                 }
-                if (v.getId() == R.id.filme3) {
+                if (v.getId() == R.id.filme4) {
                     Bundle bundle = new Bundle();
                     bundle.putString("Titulo", filmes.get(3).getTitulo());
                     bundle.putString("Ano", filmes.get(3).getAno());
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent.putExtras(bundle));
 
                 }
-                if (v.getId() == R.id.filme4) {
+                if (v.getId() == R.id.filme5) {
                     Bundle bundle = new Bundle();
                     bundle.putString("Titulo", filmes.get(4).getTitulo());
                     bundle.putString("Ano", filmes.get(4).getAno());
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent.putExtras(bundle));
 
                 }
-                if (v.getId() == R.id.filme5) {
+                if (v.getId() == R.id.filme6) {
                     Bundle bundle = new Bundle();
                     bundle.putString("Titulo", filmes.get(5).getTitulo());
                     bundle.putString("Ano", filmes.get(5).getAno());
@@ -120,15 +120,15 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent.putExtras(bundle));
 
                 }
-                if (v.getId() == R.id.filme6) {
+                if (v.getId() == R.id.filme1) {
                     Bundle bundle = new Bundle();
-                    bundle.putString("Titulo", filmes.get(6).getTitulo());
-                    bundle.putString("Ano", filmes.get(6).getAno());
-                    bundle.putString("Duracao", filmes.get(6).getDuracao());
-                    bundle.putString("Nota", filmes.get(6).getNota());
-                    bundle.putInt("Descricao", filmes.get(6).getDescricao());
-                    bundle.putString("Trailer", filmes.get(6).getTrailer());
-                    bundle.putInt("Poster", filmes.get(6).getImageAddress());
+                    bundle.putString("Titulo", filmes.get(0).getTitulo());
+                    bundle.putString("Ano", filmes.get(0).getAno());
+                    bundle.putString("Duracao", filmes.get(0).getDuracao());
+                    bundle.putString("Nota", filmes.get(0).getNota());
+                    bundle.putInt("Descricao", filmes.get(0).getDescricao());
+                    bundle.putString("Trailer", filmes.get(0).getTrailer());
+                    bundle.putInt("Poster", filmes.get(0).getImageAddress());
                     Intent intent = new Intent(MainActivity.this, Detalhes.class);
                     startActivity(intent.putExtras(bundle));
 
@@ -136,5 +136,8 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
+        for(int i=0; i<filmes.size(); i++){
+            posters.get(i).setOnClickListener(listener);
+        }
     }
 }
