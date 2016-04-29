@@ -60,7 +60,12 @@ public class Detalhes extends AppCompatActivity{
         });
         favorito.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-               favorito.setSelected(true);
+                if (!favorito.isSelected()){
+                    favorito.setSelected(true);
+                }
+                else {
+                    favorito.setSelected(false);
+                }
             }
         });
 
