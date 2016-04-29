@@ -15,6 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/titulo"
+            android:text="TITULO (ANO)"
             android:textAppearance="?android:attr/textAppearanceLarge"
             />
 
@@ -23,6 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/titulo"
             android:id="@+id/duracao"
+            android:text="duracao"
             android:textAppearance="?android:attr/textAppearanceSmall"
             />
     </RelativeLayout>
@@ -36,8 +38,68 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/poster"
+        android:src="@drawable/american"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="/10"
+            android:id="@+id/textView"
+            android:layout_alignBottom="@+id/rating"
+            android:layout_toRightOf="@+id/rating"
+            android:layout_toEndOf="@+id/rating" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="9.8"
+            android:id="@+id/rating"
+            android:layout_alignTop="@+id/poster"
+            android:layout_toRightOf="@+id/poster"
+            android:layout_toEndOf="@+id/poster"
+            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/descricao"
+            android:layout_below="@+id/poster"
+            android:layout_alignLeft="@+id/poster"
+            android:layout_alignStart="@+id/poster" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trailer"
+            android:src="@drawable/youtubetrailer"
+            android:layout_above="@+id/textView2"
+            android:layout_toLeftOf="@+id/textView"
+            android:layout_toStartOf="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Watch trailer"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/trailer"
+            android:layout_alignStart="@+id/trailer" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/favorite"
+            android:background="@drawable/favoritebutton"
+            android:layout_above="@+id/descricao"
+            android:layout_alignRight="@+id/trailer"
+            android:layout_alignEnd="@+id/trailer" />
     </RelativeLayout>
 </RelativeLayout>
