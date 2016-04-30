@@ -19,9 +19,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left|top"
-
-                android:src="@drawable/silencio"
-
                 android:id="@+id/filme1" />
 
             <ImageView
@@ -29,9 +26,6 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/filme3"
                 android:layout_gravity="left|center"
-
-                android:src="@drawable/american"
-
                 android:layout_below="@+id/filme1"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -40,9 +34,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/filme2"
-
-                android:src="@drawable/hannibal"
-
                 android:layout_gravity="left|bottom"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
@@ -63,7 +54,6 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right|top"
                 android:id="@+id/filme4"
-                android:src="@drawable/leon"
                 android:layout_below="@+id/filme1"
                 android:layout_toRightOf="@+id/filme1"
                 android:layout_toEndOf="@+id/filme1" />
@@ -71,7 +61,6 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/reddragon"
                 android:id="@+id/filme5"
                 android:layout_gravity="right|center"
                 android:layout_below="@+id/filme3"/>
@@ -80,7 +69,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/filme6"
-                android:src="@drawable/kevin"
                 android:layout_gravity="right|bottom"
                 android:layout_alignParentBottom="true"
                 android:layout_toRightOf="@+id/filme5"

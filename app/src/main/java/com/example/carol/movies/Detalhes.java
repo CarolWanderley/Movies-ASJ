@@ -10,9 +10,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/**
- * Created by Carol on 29/04/2016.
- */
 public class Detalhes extends AppCompatActivity{
 
     ImageView poster, trailer;
