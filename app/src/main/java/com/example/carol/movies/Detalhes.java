@@ -15,12 +15,8 @@ import android.widget.TextView;
  */
 public class Detalhes extends AppCompatActivity{
 
-    ImageView poster;
-    TextView title;
-    TextView duracao;
-    TextView nota;
-    TextView descricao;
-    ImageView trailer;
+    ImageView poster, trailer;
+    TextView title, duracao, nota, descricao;
     Button favorito;
 
     @Override
@@ -68,9 +64,6 @@ public class Detalhes extends AppCompatActivity{
                 }
             }
         });
-
-
-
     }
 
     @Override

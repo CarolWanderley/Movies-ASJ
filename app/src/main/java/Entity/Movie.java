@@ -26,55 +26,27 @@ public class Movie {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
     public String getAno() {
         return ano;
-    }
-
-    public void setAno(String ano) {
-        this.ano = ano;
     }
 
     public String getDuracao() {
         return duracao;
     }
 
-    public void setDuracao(String duracao) {
-        this.duracao = duracao;
-    }
-
     public String getNota() {
         return nota;
-    }
-
-    public void setNota(String nota) {
-        this.nota = nota;
     }
 
     public int getDescricao() {
         return descricao;
     }
 
-    public void setDescricao(int descricao) {
-        this.descricao = descricao;
-    }
-
     public String getTrailer() {
         return trailer;
     }
 
-    public void setTrailer(String trailer) {
-        this.trailer = trailer;
-    }
-
     public int getImageAddress() {
         return imageAddress;
-    }
-
-    public void setImageAddress(int imageAddress) {
-        this.imageAddress = imageAddress;
     }
 }
